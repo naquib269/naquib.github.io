@@ -50,3 +50,39 @@
     </footer>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... keep existing head content ... -->
+</head>
+<body>
+    <!-- Language Toggle (Add right after <body>) -->
+    <div class="language-switcher">
+        <a href="#pl" class="lang-pl">PL</a> | 
+        <a href="#en" class="lang-en">EN</a>
+    </div>
+
+    <!-- ... keep existing header ... -->
+
+    <!-- Contact Form (Add inside Contact section) -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        
+        <!-- Add this form ABOVE existing contact info -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="How can we help?" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <!-- Existing contact info -->
+        <div class="contact-info">
+            <!-- ... keep existing email/phone ... -->
+        </div>
+    </section>
+
+    <!-- ... keep existing footer ... -->
+</body>
+</html>
