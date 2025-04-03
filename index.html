@@ -86,3 +86,168 @@
     <!-- ... keep existing footer ... -->
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdmitIQ269 | Poland Admissions Specialists</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Brand Colors */
+        :root {
+            --navy: #2A3B63;
+            --crimson: #DC143C;
+            --gold: #FFD700;
+        }
+
+        /* Service Cards - SmartClass Inspired */
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(42,59,99,0.1);
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--crimson);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--crimson);
+            margin-bottom: 1rem;
+        }
+
+        /* Process Timeline (Admission Strategy) */
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            counter-reset: step;
+        }
+
+        .process-step {
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .process-step::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2rem;
+            height: 2rem;
+            background: var(--gold);
+            color: var(--navy);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        /* Visa Checklist */
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .document-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- University Selection Card -->
+    <div class="service-card">
+        <i class="fas fa-university service-icon"></i>
+        <h3>University Matching</h3>
+        <div class="checklist-grid">
+            <div class="document-item">
+                <i class="fas fa-check-circle text-crimson"></i>
+                Program Eligibility Analysis
+            </div>
+            <div class="document-item">
+                <i class="fas fa-check-circle text-crimson"></i>
+                Scholarship Opportunities
+            </div>
+            <div class="document-item">
+                <i class="fas fa-check-circle text-crimson"></i>
+                Campus Fit Assessment
+            </div>
+        </div>
+        <button class="cta-btn" data-modal="university-quiz">
+            <i class="fas fa-play-circle"></i> Start Matching Quiz
+        </button>
+    </div>
+
+    <!-- Admission Strategy Card -->
+    <div class="service-card">
+        <i class="fas fa-project-diagram service-icon"></i>
+        <h3>Admission Roadmap</h3>
+        <div class="process-timeline">
+            <div class="process-step">
+                <h4>Document Preparation</h4>
+                <p>Transcript evaluation & translation</p>
+            </div>
+            <div class="process-step">
+                <h4>Application Submission</h4>
+                <p>Portal management & tracking</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visa Assistance Card -->
+    <div class="service-card">
+        <i class="fas fa-passport service-icon"></i>
+        <h3>Visa Success Package</h3>
+        <div class="checklist-grid">
+            <div class="document-item">
+                <i class="fas fa-file-alt"></i>
+                Financial Documentation
+            </div>
+            <div class="document-item">
+                <i class="fas fa-video"></i>
+                Mock Interview Sessions
+            </div>
+        </div>
+        <div class="countdown-timer" data-date="2024-09-01">
+            <span class="days">00</span> Days to Fall Intake
+        </div>
+    </div>
+
+    <script>
+        // Interactive Elements
+        document.querySelectorAll('.cta-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const modalId = this.dataset.modal;
+                // Add modal trigger logic
+            });
+        });
+    </script>
+</body>
+</html>
