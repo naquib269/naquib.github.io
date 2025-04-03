@@ -1,17 +1,69 @@
+/* Base Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
+/* Header */
 header {
     background: #2A3B63;
     color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+/* Services Section */
+.services {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #f8f9fa;
+    border-left: 4px solid #DC143C;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+/* Contact Section */
+.contact {
+    background: #2A3B63;
+    color: white;
+    padding: 2rem;
     text-align: center;
 }
 
-section {
-    margin: 20px 0;
-    padding: 15px;
-    border-left: 4px solid #DC143C;
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services {
+        padding: 1rem;
+    }
+    
+    .service-card {
+        margin: 1rem 0.5rem;
+    }
 }
