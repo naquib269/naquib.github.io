@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    background: #2A3B63;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #DC143C;
+}
