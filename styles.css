@@ -126,3 +126,33 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(220,20,92,0.3);
 }
+/* === Override SmartClass Colors === */
+:root {
+  /* Primary */
+  --iq-primary: #2A3B63; /* Navy */
+  --iq-secondary: #DC143C; /* Crimson */
+  
+  /* Backgrounds */
+  --iq-bg-light: #F5F5F5; 
+  --iq-bg-dark: #1A2B53; /* Darker navy */
+  
+  /* Text */
+  --iq-title-text: #2A3B63;
+  --iq-body-text: #444444;
+}
+
+/* Header */
+.iq-header {
+  background: var(--iq-primary) !important;
+}
+
+/* Buttons */
+.iq-btn-primary {
+  background: var(--iq-secondary);
+  border-color: var(--iq-secondary);
+}
+
+/* Course Cards */
+.iq-course-box {
+  border-bottom: 3px solid var(--iq-secondary);
+}
