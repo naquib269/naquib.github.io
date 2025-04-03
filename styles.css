@@ -108,3 +108,21 @@ footer {
         margin: 1rem 0.5rem;
     }
 }
+
+/* Update existing .logo styles */
+.logo {
+    width: 150px;
+    height: 150px; /* Match width for perfect circle */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures image fills circle */
+    border: 3px solid #DC143C; /* Optional red border */
+    margin: 0 auto 1rem; /* Centers logo */
+    display: block; /* Needed for margin auto */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Add hover animation */
+.logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(220,20,92,0.3);
+}
